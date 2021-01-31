@@ -9,13 +9,13 @@
     <link rel="shortcut icon" href="assets/img/logo-fav.png">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="stylesheet" type="text/css" href="{{asset('org/beagle/lib/perfect-scrollbar/css/perfect-scrollbar.min.css')}}"/>
-    <link rel="stylesheet" type="text/css" href="{{asset('org/beagle/lib/material-design-icons/css/material-design-iconic-font.min.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('theme/beagle/lib/perfect-scrollbar/css/perfect-scrollbar.min.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('theme/beagle/lib/material-design-icons/css/material-design-iconic-font.min.css')}}"/>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="{{asset('org/beagle/css/app.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{asset('theme/beagle/css/app.css')}}" type="text/css"/>
 </head>
 <body class="be-splash-screen">
 <div class="be-wrapper be-login" id="app">
@@ -23,7 +23,7 @@
         <div class="main-content container-fluid">
             <div class="splash-container">
                 <div class="card card-border-color card-border-color-primary">
-                    <div class="card-header"><img src="{{asset('org/beagle/img/logo-xx.png')}}" alt="logo" width="120" height="27" class="logo-img">
+                    <div class="card-header"><img src="{{asset('theme/beagle/img/logo-xx.png')}}" alt="logo" width="120" height="27" class="logo-img">
                         <span class="splash-description">登录系统</span></div>
                     <div class="card-body">
                         <form action="{{route('login')}}" method="post">
@@ -44,9 +44,9 @@
                                             </span>
                                         </label>
                                     </div>
-                                    <div class="col-6 login-forgot-password">
+                                    <div class="col-6 login-fthemeot-password">
                                         <a href="{{route('password.request')}}">
-                                            {{__('Forgot Your Password?')}}
+                                            {{__('Fthemeot Your Password?')}}
                                         </a>
                                     </div>
                                 </div>
@@ -72,8 +72,8 @@
     </div>
 </div>
 <script src="{{mix('js/app.js')}}"></script>
-<script src="{{asset('org/beagle/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js')}}" type="text/javascript"></script>
-<script src="{{asset('org/beagle/js/app.js')}}" type="text/javascript"></script>
+<script src="{{asset('theme/beagle/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('theme/beagle/js/app.js')}}" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         //initialize the javascript

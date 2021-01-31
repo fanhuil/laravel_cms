@@ -11,6 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+         $this->call(UserSeeder::class);
+         // artisan migrate:refresh --seed 数据迁移和数据填充同时进行
+
     }
 }
